@@ -25,7 +25,7 @@ const getUrlParameter = (sParam) => {
 
 const auth = () => {
   accessToken = getUrlParameter('access_token');
-  let client_id = "0da0af82cb744d0ea1ae506f15166e44"
+  let client_id = ""
   let redirect_uri = "http://localhost:5500/swiperAPI/"
 
   const redirect = `https://accounts.spotify.com/authorize?client_id=${client_id}&response_type=token&redirect_uri=${redirect_uri}`;
